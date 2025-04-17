@@ -1,0 +1,31 @@
+============================================================================
+Autor: Patryk Krzywda,                                    Kraków, 29.05.2023
+============================================================================
+
+* Zawartosc:
+1. Program imlementujący klient-serwer używając kolejke komunikatów	.
+	serwer.c - program obsługujący proces serwera
+	klient.c - program obsługujący proces klienta
+	kolejka.c - własna biblioteka funkcji
+	kolejka.h - plik nagłówkowy do biblioteki
+----------------------------------------------------------------------------
+
+* Jak uruchomić programy?
+
+Katalog zawiera program Makefile do kompilacji, linkowania
+i uruchamiania powyzszych programow, a takze czyszczenia katalogu 
+i jego archiwizacji.
+
+-> Aby skompilować program, należy wykonać komende:
+	make all
+	
+-> Aby uruchomić program , nalezy wykonac komende:
+	make run
+	
+-> Aby wyczyscic zawartosc katalogu (usunac zbedne pliki), nalezy wykonac:
+    make clean
+       
+-> W celu archiwizacji oraz kompresji katalogu nalezy wykonac:
+    make tar
+
+============================================================================

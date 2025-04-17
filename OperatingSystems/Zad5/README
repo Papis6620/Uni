@@ -1,0 +1,36 @@
+============================================================================
+Autor: Patryk Krzywda,                                    Kraków, 18.04.2023
+============================================================================
+
+* Zawartosc:
+1. Program implementujący problem "Producenta i konsumenta" przy pomocy
+   potoków nazwanych.
+	zad5.c - program główny do zadania
+	input.c - program obsługujący producenta
+	output.c - program obsługujący konsumenta
+	input.txt - plik tekstowy zawierający tekst do przesłania
+----------------------------------------------------------------------------
+
+* Jak uruchomić programy?
+
+Katalog zawiera program Makefile do kompilacji, linkowania
+i uruchamiania powyzszych programow, a takze czyszczenia katalogu 
+i jego archiwizacji.
+
+-> Aby uruchomić program 1, nalezy wykonac komende:
+	make all
+	make run ARGS="input.txt nazwa_pliku_wyjściowego.txt"
+	
+-> Obsługa programów z powłoki systemowej
+	mkfifo fifo - stworzenie potoku 
+	./input input.txt fifo - uruchomienie procesu producenta
+	./output output.txt fifo - uruchomienie procesu konsumenta
+	rm fifo - usunięcie potoku
+	
+-> Aby wyczyscic zawartosc katalogu (usunac zbedne pliki), nalezy wykonac:
+       make clean
+       
+-> W celu archiwizacji oraz kompresji katalogu nalezy wykonac:
+       make tar
+
+============================================================================

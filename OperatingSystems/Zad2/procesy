@@ -1,0 +1,1 @@
+Powstanie n procesów, ponieważ funckja execlp nie powraca do procesu macierzystego po uruchomieniu programu.

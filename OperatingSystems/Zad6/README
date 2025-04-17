@@ -1,0 +1,28 @@
+============================================================================
+Autor: Patryk Krzywda,                                    Kraków, 15.05.2023
+============================================================================
+
+* Zawartosc:
+1. Program imlementujący wzajemne wykluczanie dla procesów.
+	zad6.c - program główny do zadania
+	licznik.c - program sprawdzający poprawność działania
+	semafory.c - własna biblioteka funkcji
+	semafory.h - plik nagłówkowy do biblioteki
+----------------------------------------------------------------------------
+
+* Jak uruchomić programy?
+
+Katalog zawiera program Makefile do kompilacji, linkowania
+i uruchamiania powyzszych programow, a takze czyszczenia katalogu 
+i jego archiwizacji.
+
+-> Aby uruchomić program , nalezy wykonac komende:
+	make run
+	
+-> Aby wyczyscic zawartosc katalogu (usunac zbedne pliki), nalezy wykonac:
+       make clean
+       
+-> W celu archiwizacji oraz kompresji katalogu nalezy wykonac:
+       make tar
+
+============================================================================

@@ -1,0 +1,25 @@
+Proces macierzysty: UID = 1000, GID= 1000, PID= 3076, PGID = 3068, PPID = 3068 
+Proces potomny: UID = 1000, GID= 1000, PID= 3077, PGID = 3068, PPID = 3076 
+Proces potomny: UID = 1000, GID= 1000, PID= 3078, PGID = 3068, PPID = 3076 
+Proces potomny: UID = 1000, GID= 1000, PID= 3079, PGID = 3068, PPID = 3076 
+Proces potomny: UID = 1000, GID= 1000, PID= 3080, PGID = 3068, PPID = 3077 
+Proces potomny: UID = 1000, GID= 1000, PID= 3081, PGID = 3068, PPID = 3077 
+Proces potomny: UID = 1000, GID= 1000, PID= 3082, PGID = 3068, PPID = 3078 
+Proces potomny: UID = 1000, GID= 1000, PID= 3083, PGID = 3068, PPID = 3080
+
+
+
+(PID= 3076, PGID = 3068, PPID = 3068)
+                   |-------------------------------------------------------------------------------------------
+                   |                                             |                                            |
+                   |                                             |                                            |
+(PID= 3077, PGID = 3068, PPID = 3076)     (PID= 3079, PGID = 3068, PPID = 3076)     (PID= 3078, PGID = 3068, PPID = 3076)
+                   |                                                                                          |
+                   |---------------------------------------------                                             |
+                   |                                            |                                             |
+(PID= 3080, PGID = 3068, PPID = 3077)     (PID= 3081, PGID = 3068, PPID = 3077)      (PID= 3082, PGID = 3068, PPID = 3078)
+                   |
+                   |
+(PID= 3083, PGID = 3068, PPID = 3080)
+                   
+                                    

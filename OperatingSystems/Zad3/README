@@ -1,0 +1,46 @@
+============================================================================
+Autor: Patryk Krzywda,                                    Kraków, 03.04.2023
+============================================================================
+
+* Zawartosc:
+1. Program do obsługi sygnałów.
+	zad3_a.c - program główny do zadania
+	
+2. Program uruchamiający program z zad3a poprzez funkcję execlp w procesie
+   potomnym oraz wysyłający sygnał funkcją kill, a następnie zwraca PID oraz
+   status zakończenia zwrócone przez funkcję wait.
+	zad3_b.c - program główny do zadania
+	
+3. Program uruchamiający w procesie potomnym program ignorujący sygnały
+   tworzący 3 procesy potomne, które poprzez funkcję execlp uruchamiają 
+   program z zad3a. Procesy macierzyste zwracają PID i status zakończenia
+   procesów potomnych
+	zad3_c.c - program główny do zadania
+	procesy.c - program pomocniczy
+----------------------------------------------------------------------------
+
+* Jak uruchomić programy?
+
+Katalog zawiera program Makefile do kompilacji, linkowania
+i uruchamiania powyzszych programow, a takze czyszczenia katalogu 
+i jego archiwizacji.
+
+-> Aby skompilować programy, nalezy wykonac komende:
+	make all
+
+-> Aby uruchomić program 1, nalezy wykonac komende:
+	make 3a sig = (nr. sygnału) inst = (sposób obsługi(1, 2 lub 3))
+	
+-> Aby uruchomić program 2, nalezy wykonac komende:
+	make 3b sig = (nr. sygnału) inst = (sposób obsługi(1, 2 lub 3))
+	
+-> Aby uruchomić program 3, nalezy wykonac komende:
+	make 3b sig = (nr. sygnału) inst = (sposób obsługi(1, 2 lub 3))
+	
+-> Aby wyczyscic zawartosc katalogu (usunac zbedne pliki), nalezy wykonac:
+       make clean
+       
+-> W celu archiwizacji oraz kompresji katalogu nalezy wykonac:
+       make tar
+
+============================================================================

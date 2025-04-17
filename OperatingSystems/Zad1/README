@@ -1,0 +1,53 @@
+============================================================================
+Autor: Patryk Krzywda,                                    Kraków, 18.03.2023
+============================================================================
+
+* Zawartosc:
+1. Program wypisujący identyfikatory procesu UID, GID, PID, PPID oraz PGID.
+	zad1_a - program główny do zadania 1a
+2. Program wywołujący funkcje fork() trzy razy w pętli oraz używający funkcji
+   wait(), żeby proces macierzysty poczekał na procesy potomne i wypisujący 
+   identyfikatory procesów UID, GID, PID, PPID oraz PGID.
+	zad1_b - program główny do zadania 1b
+3. Program wywołujący funkcje fork() trzy razy w pętli oraz używający funkcji
+   sleep(), żeby procesy potomne były adoptowane przez proces init.
+	zad1_c - program główny do zadania 1c
+4. Program wywołujący funkcję fork() trzy razy w pętli oraz wypisujący 
+   procesy potomne pogrupowane wg. pokoleń od najstarszego do najmłodszego
+   przy użyciu funkcji sleep().
+	zad1_d - program główny do zadania 1d
+	drzewo_gen - plik tekstowy zawierający drzewo genealogiczne procesów
+5. Program wywołujący funkcję fork() trzy razy i przy użyciu funkcji 
+   setpgid() każdy proces potomny staję się liderem swojej grupy procesów.
+   	zad1_e - program główny do zadania 1e
+   	ilosc_procesow - plik tekstowy zawierający odpowiedź 
+----------------------------------------------------------------------------
+
+* Jak uruchomić programy?
+
+Katalog zawiera program Makefile do kompilacji, linkowania
+i uruchamiania powyzszych programow, a takze czyszczenia katalogu 
+i jego archiwizacji.
+
+-> Aby skompilować i uruchomic 1. program, nalezy wykonac komende:
+	make zad1_a
+
+-> Aby skompilować i uruchomic 2. program, nalezy wykonac komende:
+	make zad1_b
+	
+-> Aby skompilować i uruchomic 3. program, nalezy wykonac komende:
+	make zad1_c
+	
+-> Aby skompilować i uruchomic 4. program, nalezy wykonac komende:
+	make zad1_d
+	
+-> Aby skompilować i uruchomic 5. program, nalezy wykonac komende:
+	make zad1_e
+
+-> Aby wyczyscic zawartosc katalogu (usunac zbedne pliki), nalezy wykonac:
+       make clean
+       
+-> W celu archiwizacji oraz kompresji katalogu nalezy wykonac:
+       make tar
+
+============================================================================

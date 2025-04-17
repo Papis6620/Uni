@@ -1,0 +1,28 @@
+============================================================================
+Autor: Patryk Krzywda,                                    Kraków, 27.03.2023
+============================================================================
+
+* Zawartosc:
+1. Program wypisujący identyfikatory procesów potomnych przy przy użyciu 
+   fork i execlp.
+	zad2.c - program główny do zadania
+	start.c - program otwierany przez funckje execlp
+2. Plik tekstowy(procesy) zawierający odpowiedź na pytanie z ćwiczenia 2
+----------------------------------------------------------------------------
+
+* Jak uruchomić programy?
+
+Katalog zawiera program Makefile do kompilacji, linkowania
+i uruchamiania powyzszych programow, a takze czyszczenia katalogu 
+i jego archiwizacji.
+
+-> Aby skompilować i uruchomic program, nalezy wykonac komende:
+	make all
+
+-> Aby wyczyscic zawartosc katalogu (usunac zbedne pliki), nalezy wykonac:
+       make clean
+       
+-> W celu archiwizacji oraz kompresji katalogu nalezy wykonac:
+       make tar
+
+============================================================================
