@@ -1,0 +1,14 @@
+{
+  "ona": {
+    "Odzież damska": ["Sukienki", "Bluzki", "Spódnice", "Kurtki"],
+    "Obuwie damskie": ["Szpilki", "Sneakersy", "Sandały"]
+  },
+  "on": {
+    "Odzież męska": ["Koszulki", "Spodnie", "Kurtki"],
+    "Obuwie męskie": ["Buty sportowe", "Eleganckie", "Trzewiki"]
+  },
+  "dziecko": {
+    "Odzież dziecięca": ["Body", "Koszulki", "Spodenki"],
+    "Obuwie dziecięce": ["Kapcie", "Trampki", "Sandałki"]
+  }
+}

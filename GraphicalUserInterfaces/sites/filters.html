@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/filters_styles.css" />
+  </head>
+
+  <!-- Menu boczne z filtrami -->
+  <aside class="sidebar">
+    <h2>Filtry</h2>
+
+    <!-- Przycisk Wyczyść filtry -->
+    <button class="clear-btn" id="clear-filters-btn">Wyczyść filtry</button>
+
+    <div class="filter-section collapsed">
+      <h3>Kategorie</h3>
+      <div class="filter-content">
+        <!-- Opcje wyboru preferencji -->
+        <label
+          ><input
+            type="radio"
+            class="filter-radio"
+            name="category"
+            value="none"
+            checked
+          />
+          Brak preferencji</label
+        >
+        <label
+          ><input
+            type="radio"
+            class="filter-radio"
+            name="category"
+            value="ona"
+          />
+          ONA</label
+        >
+        <label
+          ><input
+            type="radio"
+            class="filter-radio"
+            name="category"
+            value="on"
+          />
+          ON</label
+        >
+        <label
+          ><input
+            type="radio"
+            class="filter-radio"
+            name="category"
+            value="dziecko"
+          />
+          DZIECKO</label
+        >
+
+        <!-- Dynamiczny kontener na kategorie -->
+        <div id="dynamic-category-content" class="dynamic-category"></div>
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <h3>Zakres cen</h3>
+      <div class="filter-content">
+        <div class="price-slider">
+          <input
+            type="range"
+            id="price-min"
+            min="0"
+            max="1000"
+            value="0"
+            step="5"
+          />
+          <input
+            type="range"
+            id="price-max"
+            min="0"
+            max="1000"
+            value="1000"
+            step="5"
+          />
+        </div>
+        <div class="price-values">
+          <span id="min-value">0 zł</span>
+          <span id="max-value">1000 zł</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <h3>Sortuj wg</h3>
+      <div class="filter-content">
+        <label
+          ><input
+            type="radio"
+            name="sort"
+            class="filter-radio"
+            id="no-sort"
+            checked
+          />
+          Brak sortowania</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="sort"
+            class="filter-radio"
+            id="high-to-low"
+          />
+          Cena najwyższa</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="sort"
+            class="filter-radio"
+            id="low-to-high"
+          />
+          Cena najniższa</label
+        >
+      </div>
+    </div>
+
+    <div id="size-unroll", class="filter-section collapsed">
+      <h3>Rozmiar</h3>
+      <div class="filter-content">
+        <label
+          ><input type="checkbox" class="filter-checkbox" name="size" />
+          XS</label
+        >
+        <label
+          ><input type="checkbox" class="filter-checkbox" name="size" />
+          S</label
+        >
+        <label
+          ><input type="checkbox" class="filter-checkbox" name="size" />
+          M</label
+        >
+        <label
+          ><input type="checkbox" class="filter-checkbox" name="size" />
+          L</label
+        >
+        <label
+          ><input type="checkbox" class="filter-checkbox" name="size" />
+          XL</label
+        >
+        <label
+          ><input type="checkbox" class="filter-checkbox" name="size" />
+          XXL</label
+        >
+
+        <div class="shoe-size-label">
+          <h4>Rozmiary butów:</h4>
+        </div>
+        <label>
+          <input type="checkbox" class="filter-checkbox" name="size" />
+          36
+        </label>
+        <label>
+          <input type="checkbox" class="filter-checkbox" name="size" />
+          37
+        </label>
+        <label>
+          <input type="checkbox" class="filter-checkbox" name="size" />
+          38
+        </label>
+        <label>
+          <input type="checkbox" class="filter-checkbox" name="size" />
+          39
+        </label>
+        <label>
+          <input type="checkbox" class="filter-checkbox" name="size" />
+          40
+        </label>
+        <label>
+          <input type="checkbox" class="filter-checkbox" name="size" />
+          41
+        </label>
+        <label>
+          <input type="checkbox" class="filter-checkbox" name="size" />
+          42
+        </label>
+        <label>
+          <input type="checkbox" class="filter-checkbox" name="size" />
+          43
+        </label>
+        <label>
+          <input type="checkbox" class="filter-checkbox" name="size" />
+          44
+        </label>
+        <label>
+          <input type="checkbox" class="filter-checkbox" name="size" />
+          45
+        </label>
+        <label>
+          <input type="checkbox" class="filter-checkbox" name="size" />
+          46
+        </label>
+      </div>
+    </div>
+
+    <div id="color-unroll", class="filter-section collapsed">
+      <h3>Kolor</h3>
+      <div id="filter-section-colors" , class="filter-content">
+        <!--Tutaj sa kolory wczytywane z colorMap-->
+      </div>
+    </div>
+    <!-- Przycisk zastosuj -->
+    <button class="apply-btn">Zastosuj filtry</button>
+  </aside>
+
+  <script src="../scripts/filters_script.js"></script>
+</html>
